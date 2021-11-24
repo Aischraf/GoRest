@@ -45,14 +45,20 @@ $data = $data["data"];
       </div>
     </div>
       </nav>
+      <br/>
+      <div class="d-grid gap-2 col-6 mx-auto">
+      <a href="create.php" class="btn btn-primary" type="button">Create New User</a>
+</div>
 
       <div class="container">
+        
 
 <div class="row mt-3">
   <div class="col">
     <h1> User List</h1>
 </div>
 </div>
+
       
 <div class="row">
 
@@ -66,7 +72,7 @@ $data = $data["data"];
     <h5 class="card-title"><?= $row["title"];?></h5>
     <p class="card-text"><?= $row["body"];?></p>
     <a href="update.php" class="btn btn-primary">Update</a>
-    <a href="delete.php" class="btn btn-primary">Delete</a>
+    <a href="delete.php" class="btn btn-danger">Delete</a>
   </div>
   <div class="row mt-5">
 <?php endforeach ; ?>
